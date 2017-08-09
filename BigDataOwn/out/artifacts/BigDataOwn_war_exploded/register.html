@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.js"/>
+    <script type="text/javascript">
+        $(function () {
+            $(".submit").click(function () {
+                alert("注册成功");
+            })
+            $(".reset").click(function () {
+                alert("注册成功");
+            })
+        })
+    </script>
+</head>
+<body>
+<form action="register" method="post">
+    <p>
+        用户名：<input type="text" name="username">
+    </p>
+    <p>
+        密 码：<input type="password" name="password">
+    </p>
+    <p>
+        <input type="submit"  class="submit" value="注册">
+        <input type="reset"  class="reset" value="重置">
+    </p>
+</form>
+
+</body>
+</html>
