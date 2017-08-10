@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="mybatis">
+    <CLASSES>
+      <root url="jar://E:/mybatis-3.3.0/lib/asm-4.2.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/lib/cglib-3.1.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/lib/javassist-3.17.1-GA.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/lib/log4j-1.2.17.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/lib/log4j-api-2.2.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/lib/log4j-core-2.2.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/lib/slf4j-api-1.7.12.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/lib/slf4j-log4j12-1.7.12.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/commons-dbcp-1.2.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/mybatis-3.3.0.jar!/" />
+      <root url="jar://E:/mybatis-3.3.0/mybatis-spring-1.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

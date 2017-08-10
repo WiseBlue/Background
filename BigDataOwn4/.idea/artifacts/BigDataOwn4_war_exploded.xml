@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="BigDataOwn4:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BigDataOwn4_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="BigDataOwn4/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="BigDataOwn4" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.10.RELEASE" />
+          <element id="library" level="project" name="mybatis" />
+          <element id="library" level="project" name="junit-4.10" />
+          <element id="library" level="project" name="mysql-connector-java-5.1.42-bin" />
+          <element id="library" level="project" name="commons-pool-1.6" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
