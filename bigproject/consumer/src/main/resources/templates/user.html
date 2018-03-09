@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test1</title>
+    <link href="/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    <script src="/js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        function getUser() {
+            $.ajax({
+                url:"/user/all",
+                type:"GET",
+                success:function (result) {
+                    var content=result.info.users;
+                    var table;
+                    $.each(content,function (key,value) {
+                        var userId=$("<td></td>").append(value.userId);
+                        var userName=$("<td></td>").append(value.userName);
+                        var password=$("<td></td>").append(value.userPassword);
+                        var authority=$("<td></td>").append(value.userAuthority);
+                        table=$("<tr></tr>").append(userId).append(userName).append(password).append(authority);
+                        $("#userBody").append(table);
+                    })
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+<h3>欢迎来到用户管理界面</h3>
+<div class="container">
+    <div><input type="button" value="返回所有用户" onclick="getUser()"></div>
+    <div class="col-md-12">
+        <table id="content" class="table table-striped" >
+            <thead>
+            <tr>
+                <th>编号</th>
+                <th>用户名</th>
+                <th>密码</th>
+                <th>权限</th>
+            </tr>
+            </thead>
+            <tbody id="userBody">
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
